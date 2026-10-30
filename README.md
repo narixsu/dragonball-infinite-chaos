@@ -6,7 +6,7 @@ A Windows desktop client for Dragonball: Infinite Chaos, with a live map, separa
 
 [Download the Windows client](https://github.com/narixsu/dragonball-infinite-chaos/releases/latest)
 
-1. Download **InfiniteChaos-Client-2.0-Windows.zip** from the latest release.
+1. Download **InfiniteChaos-Client-2.1-Windows.zip** from the latest release.
 2. Extract the entire ZIP into a folder.
 3. Run **InfiniteChaos.exe**, keeping **InfiniteChaos.pck** beside it.
 4. Click **Connect** and log in or create a character.
@@ -14,6 +14,10 @@ A Windows desktop client for Dragonball: Infinite Chaos, with a live map, separa
 The server is preset to **malls-prada.tun.ply.gg**, port **43666**.
 
 Click **Preview** to explore an offline sample before connecting.
+
+## New in 2.1
+
+Room descriptions, exits, mobs, players, and aura details now stay in a dedicated upper panel with larger text. Drag the divider to resize it. Room details refresh when you move or use Look. The compact battle HUD lives in the Combat Feed tab, leaving more space for exploration. The pinned panel needs the matching server room-panel update.
 
 ## Features
 
