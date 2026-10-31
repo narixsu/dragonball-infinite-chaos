@@ -1,33 +1,36 @@
 # Dragonball: Infinite Chaos
 
-A desktop MUD client for Windows and macOS with an illustrated world atlas, separate channel chat, room and mob panels, combat highlights, and configurable quick actions.
+A desktop MUD client with a detailed world atlas, miniature area landscapes, separate channel chat, pinned room details and animated combat effects.
 
 ## Download and play
 
 [Get the latest client](https://github.com/narixsu/dragonball-infinite-chaos/releases/latest)
 
-- **Windows:** download `InfiniteChaos-Client-2.2-Windows.zip`, extract the ZIP, and run `InfiniteChaos.exe`.
-- **Mac:** download `InfiniteChaos-Client-2.2-macOS.zip`, extract the ZIP, and open `DBIC Client.app`. Supports Apple Silicon (macOS 13+) and Intel (macOS 11+).
+- **Windows:** download `InfiniteChaos-Client-2.3-Windows.zip`, extract it, and run the new `InfiniteChaos.exe`. Close the older client first.
+- **Mac preview:** `InfiniteChaos-Client-2.3-macOS-Preview.zip` is experimental. Supports Apple Silicon (macOS 13+) and Intel (macOS 11+), but has not been launched on a native Mac. The reported damaged/cannot-open issue is **not confirmed fixed**. It is ad-hoc signed, not Apple-notarized; see the bundled START_HERE.txt.
 
-Click **Connect** and log in or create a character. The server is preset to **malls-prada.tun.ply.gg**, port **43666**. Player instructions and Godot runtime notices are bundled in both ZIPs.
+Click **Connect** and log in or create a character. The server is preset to **malls-prada.tun.ply.gg**, port **43666**. Player instructions, checksums and Godot notices accompany the downloads.
 
-The Mac app is ad-hoc signed, not Apple-notarized, and may need macOS approval to open. Its bundle, architectures, and permissions have been checked; a native Mac launch has not yet been tested.
+## New in 2.3
 
-## New in 2.2
+- Detailed atlas with smooth ocean-depth shading, textured terrain, mountain relief, forest canopies, miniature buildings, distinct landmark icons, coordinate guides and readable labels.
+- Raised local room tiles show forests, buildings, water and mountains, with clearer paths, doors and stairs. Double-click routes avoid closed and locked doors.
+- Nearby mob badges show counts, hostile/trainer colors and hover names. **Requires the matching server update and hotboot.** Live mob snapshots respect visibility, darkness, local range and hidden/closed exits.
+- Combat Feed includes ki beams, impact rings and defense effects, based on game text. **Reduce animations** keeps the display static.
+- Command and chat input remain in typing mode after Enter. The last command stays selected: typing replaces it, Enter repeats it. Passwords clear immediately and stay out of history.
 
-- Illustrated planet atlas with forests, mountains, coastlines, ocean waves, roads, cities, landmark icons, and a player beacon.
-- **Planet** fits the whole world; **Expand** opens a larger map window, and **Dock** returns it. Scroll to zoom, drag to pan, and hover landmarks for their names.
-- **Atlas preview** provides an offline Earth map demo.
-- Last command stays selected after Enter: Enter repeats, typing replaces. Configurable in Settings. Passwords still clear immediately and are excluded from history.
+![World atlas](https://github.com/narixsu/dragonball-infinite-chaos/releases/download/v2.3.0/AtlasPreview.png)
 
-![Planet atlas](https://github.com/narixsu/dragonball-infinite-chaos/releases/download/v2.2.0/AtlasPreview.png)
+![Area landscapes](https://github.com/narixsu/dragonball-infinite-chaos/releases/download/v2.3.0/AreaPreview.png)
+
+Scroll to zoom, drag to pan, **Expand** for a larger map, **Dock** to return it, and **Planet** to fit the world. **Atlas preview** shows an offline Earth demo.
 
 ## Other features
 
-- Current-room panel with larger descriptions, exits, mobs, players, and aura details. Drag the divider to resize it. It refreshes when you move or use Look and needs the matching server room-panel update.
-- All, OOC, Chat, Clan, Tells, and Staff tabs with unread counts.
-- Live life, ki, armor, power, focus, and target-life displays; compact battle HUD inside Combat Feed while fighting.
-- World Feed retains every server message. Combat highlights use text matching and may not recognize every attack.
-- Six configurable quick actions, aliases, font sizing, aura themes, and reduced battle animations.
+- Pinned room descriptions, exits, occupants and aura details, refreshed on movement or Look with the matching server update.
+- All, OOC, Chat, Clan, Tells and Staff tabs with unread counts.
+- Life, ki, armor, power, focus and target-life displays; combat HUD appears in Combat Feed while fighting.
+- World Feed preserves every server message. Combat highlights use text matching and may not recognize every attack. Life-change indicators show net changes between server updates, not per-hit damage.
+- Quick actions, aliases, font sizing and aura themes.
 
-Life-change indicators show net change between server updates. This repository distributes the client; game server files and player accounts are not included.
+Interaction tests, mob-visibility tests, a full server candidate build and exported Windows startup passed. Mac checks verify packaging, permissions and signature hashes only; Mac launch and Gatekeeper acceptance remain unverified. The game server has not been hotbooted by this release. This repository distributes the client; game server files and player accounts are not included.
