@@ -1,32 +1,33 @@
 # Dragonball: Infinite Chaos
 
-A Windows desktop client for Dragonball: Infinite Chaos, with a live map, separate channel chat, an animated battle HUD, combat highlights, and configurable quick actions.
+A desktop MUD client for Windows and macOS with an illustrated world atlas, separate channel chat, room and mob panels, combat highlights, and configurable quick actions.
 
 ## Download and play
 
-[Download the Windows client](https://github.com/narixsu/dragonball-infinite-chaos/releases/latest)
+[Get the latest client](https://github.com/narixsu/dragonball-infinite-chaos/releases/latest)
 
-1. Download **InfiniteChaos-Client-2.1-Windows.zip** from the latest release.
-2. Extract the entire ZIP into a folder.
-3. Run **InfiniteChaos.exe**, keeping **InfiniteChaos.pck** beside it.
-4. Click **Connect** and log in or create a character.
+- **Windows:** download `InfiniteChaos-Client-2.2-Windows.zip`, extract the ZIP, and run `InfiniteChaos.exe`.
+- **Mac:** download `InfiniteChaos-Client-2.2-macOS.zip`, extract the ZIP, and open `DBIC Client.app`. Supports Apple Silicon (macOS 13+) and Intel (macOS 11+).
 
-The server is preset to **malls-prada.tun.ply.gg**, port **43666**.
+Click **Connect** and log in or create a character. The server is preset to **malls-prada.tun.ply.gg**, port **43666**. Player instructions and Godot runtime notices are bundled in both ZIPs.
 
-Click **Preview** to explore an offline sample before connecting.
+The Mac app is ad-hoc signed, not Apple-notarized, and may need macOS approval to open. Its bundle, architectures, and permissions have been checked; a native Mac launch has not yet been tested.
 
-## New in 2.1
+## New in 2.2
 
-Room descriptions, exits, mobs, players, and aura details now stay in a dedicated upper panel with larger text. Drag the divider to resize it. Room details refresh when you move or use Look. The compact battle HUD lives in the Combat Feed tab, leaving more space for exploration. The pinned panel needs the matching server room-panel update.
+- Illustrated planet atlas with forests, mountains, coastlines, ocean waves, roads, cities, landmark icons, and a player beacon.
+- **Planet** fits the whole world; **Expand** opens a larger map window, and **Dock** returns it. Scroll to zoom, drag to pan, and hover landmarks for their names.
+- **Atlas preview** provides an offline Earth map demo.
+- Last command stays selected after Enter: Enter repeats, typing replaces. Configurable in Settings. Passwords still clear immediately and are excluded from history.
 
-## Features
+![Planet atlas](https://github.com/narixsu/dragonball-infinite-chaos/releases/download/v2.2.0/AtlasPreview.png)
 
-- Live map beside the game: zoom, pan, recenter, and double-click area rooms to speedwalk.
-- Separate All, OOC, Chat, Clan, Tells, and Staff tabs with unread counts.
-- Target-lock battle HUD and live life, ki, armor, power, focus, and target-life displays.
-- Combat Feed with strike, defense, critical, and finish highlights; World Feed retains all server messages.
-- Six customizable quick-action buttons, aliases, font sizing, aura themes, and reduced battle animations.
+## Other features
 
-Combat highlights use text matching and may not recognize every attack. Life-change indicators show the net change between server updates. This release is for Windows 64-bit; Mac and Linux builds are not included.
+- Current-room panel with larger descriptions, exits, mobs, players, and aura details. Drag the divider to resize it. It refreshes when you move or use Look and needs the matching server room-panel update.
+- All, OOC, Chat, Clan, Tells, and Staff tabs with unread counts.
+- Live life, ki, armor, power, focus, and target-life displays; compact battle HUD inside Combat Feed while fighting.
+- World Feed retains every server message. Combat highlights use text matching and may not recognize every attack.
+- Six configurable quick actions, aliases, font sizing, aura themes, and reduced battle animations.
 
-Player instructions and Godot runtime notices are bundled in the ZIP. This repository distributes the client; game server data and player accounts are not included.
+Life-change indicators show net change between server updates. This repository distributes the client; game server files and player accounts are not included.
